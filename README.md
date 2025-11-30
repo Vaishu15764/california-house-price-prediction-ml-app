@@ -90,27 +90,8 @@ Trained model
 Column order for prediction consistency
 
 📂 Project Folder Structure
-callifornia_house_prediction_project/
-│
-├── backend/
-│   ├── app.py                 # FastAPI backend
-│   ├── explain.py             # Gemini AI logic
-│   ├── load_model.py          # Loads model.joblib
-│   ├── history.json           # Prediction history
-│   ├── model.joblib           # Trained ML model
-│   └── .env                   # GEMINI_API_KEY
-│
-├── frontend/
-│   ├── streamlit_app.py       # Main Streamlit app
-│   ├── style.css              # Full UI styling
-│   ├── components/
-│   │   ├── sidebar.py
-│   │   ├── chatbot.py
-│   │   └── form_inputs.py
-│   ├── voice.mp3              # AI speech output (auto-generated)
-│   └── voice_temp.mp3
-│
-└── README.md                  # You're here 🙂
+<img width="727" height="682" alt="image" src="https://github.com/user-attachments/assets/c1aa875b-73d0-4828-984e-a22a7e65634e" />
+
 
 🛠️ Tech Stack
 🔗 Backend
