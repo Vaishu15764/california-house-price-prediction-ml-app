@@ -1,0 +1,21 @@
+# Ignore environment files
+.env
+*.mp3
+
+# Ignore history
+history.json
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Model & temp files
+*.pkl
+*.joblib
+
+# Streamlit & FastAPI temp files
+.streamlit/
+
+# OS files
+.DS_Store
+Thumbs.db
