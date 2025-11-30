@@ -160,6 +160,8 @@ GET	/history	Fetches prediction history
 DELETE	/history	Clears prediction history
 
 📸 Screenshots
+<img width="1624" height="852" alt="image" src="https://github.com/user-attachments/assets/26e873cc-b673-4e7c-aef7-22bfd6531a9f" />
+
 
 
 🏡 Prediction UI
