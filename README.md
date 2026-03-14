@@ -152,7 +152,7 @@ $129,825
 ```
 ---
 
-# 👩‍💻 Author
+## 👩‍💻 Author
 
-Vaishnavi Sainath Pachange
+**Vaishnavi Sainath Pachange**  
 Machine Learning & Data Science Enthusiast
