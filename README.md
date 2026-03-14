@@ -99,7 +99,7 @@ california-house-price-prediction-ml-app
 
 Clone the repository
 
-git clone https://github.com/YOUR_USERNAME/california-house-price-prediction-ml-app.git
+git clone(https://github.com/Vaishu15764/california-house-price-prediction-ml-app.git)
 
 cd california-house-price-prediction-ml-app
 
@@ -136,6 +136,7 @@ streamlit run frontend/streamlit_app.py
 
 # 📊 Example Prediction
 
+```
 Input Features
 
 Median Income: 8.32
@@ -148,6 +149,7 @@ Predicted Price
 $129,825
 ₹1,07,75,475
 
+```
 ---
 
 # 👩‍💻 Author
