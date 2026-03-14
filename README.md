@@ -54,7 +54,7 @@ This project combines **Machine Learning, FastAPI backend, and Streamlit fronten
 ---
 
 # 🏗️ Project Architecture
-
+```
 Streamlit UI
 ⬇
 FastAPI Backend
@@ -62,34 +62,36 @@ FastAPI Backend
 Machine Learning Model (Scikit-learn)
 ⬇
 AI Explanation (LLM)
-
+```
 ---
 
-# 📁 Project Structure
+## 📁 Project Structure
 
+```
 california-house-price-prediction-ml-app
-
-backend/
-    app.py
-    load_model.py
-    explain.py
-
-frontend/
-    streamlit_app.py
-    style.css
-
-frontend/components/
-    sidebar.py
-    chatbot.py
-    form_inputs.py
-
-screenshots/
-    dashboard.png
-    chatbot.png
-
-requirements.txt
-README.md
-.gitignore
+│
+├── backend
+│   ├── app.py
+│   ├── load_model.py
+│   └── explain.py
+│
+├── frontend
+│   ├── streamlit_app.py
+│   └── style.css
+│
+├── frontend/components
+│   ├── sidebar.py
+│   ├── chatbot.py
+│   └── form_inputs.py
+│
+├── screenshots
+│   ├── dashboard.png
+│   └── chatbot.png
+│
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
 
 ---
 
