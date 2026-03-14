@@ -1,200 +1,154 @@
-🌟 California House Price Prediction – AI + Voice Web App
+# 🏠 California House Price Prediction ML App
 
-A modern, interactive, fully-powered Machine Learning + FASTAPI + Streamlit application that predicts California house prices using Linear Regression.
-Includes a built-in AI Chat Assistant (Gemini API) and Voice Output using gTTS — all wrapped in a beautiful, animated UI.
+A full-stack **Machine Learning application** that predicts California housing prices and provides **AI-powered explanations** for predictions.
 
+This project combines **Machine Learning, FastAPI backend, and Streamlit frontend** to create an interactive dashboard for real-time house price prediction.
 
-📌 Features
-🔮 1. House Price Prediction
+---
 
-Enter house details such as:
+# 🚀 Features
 
-Median Income
+* Predict California house prices using trained ML models
+* Model comparison (**Linear Regression, Decision Tree, Random Forest**)
+* Display **Model Metrics (R² Score & MSE)**
+* Interactive **Streamlit dashboard UI**
+* **AI assistant** to explain predictions
+* **Voice output** for AI explanations
+* **Prediction history tracking**
+* Automatic **USD → INR price conversion**
 
-House Age
+---
 
-Average Rooms
+# 🖼️ Dashboard Screenshots
 
-Average Bedrooms
+## Main Prediction Dashboard
 
-Population
+![Dashboard Screenshot](screenshots/dashboard.png)
 
-Average Occupancy
+## AI Explanation Chat
 
-Longitude
+![AI Chat Screenshot](screenshots/chatbot.png)
 
-Prediction appears instantly with a stylish UI card.
+---
 
-🤖 2. AI Chat Assistant (Gemini API)
+# 🧠 Machine Learning Workflow
 
-Ask questions like:
+1. Data Cleaning & Preprocessing
+2. Exploratory Data Analysis (EDA)
+3. Outlier Detection using **IQR Method**
+4. Feature Scaling (Standardization)
+5. Multicollinearity Check (**VIF**)
+6. Model Training
 
-"Why is the price high?"
+### Models Used
 
-"How can I increase the house value?"
+* Linear Regression
+* Decision Tree Regressor
+* Random Forest Regressor
 
-"Which features affect price most?"
+### Model Evaluation Metrics
 
-The AI responds intelligently based on:
-✔ Your prediction
-✔ Your input features
-✔ Your custom question
+* **R² Score**
+* **Mean Squared Error (MSE)**
 
-And includes voice output!
+---
 
-🗣️ 3. Voice Explanation
+# 🏗️ Project Architecture
 
-Every AI response is converted into speech using gTTS.
-A modern audio player automatically appears.
+Streamlit UI
+⬇
+FastAPI Backend
+⬇
+Machine Learning Model (Scikit-learn)
+⬇
+AI Explanation (LLM)
 
-📚 4. Prediction History
+---
 
-All predictions are saved in history.json and shown in the sidebar.
+# 📁 Project Structure
 
-Includes:
+california-house-price-prediction-ml-app
 
-✔ Clear History button
-✔ Clear Prediction button
+backend/
+    app.py
+    load_model.py
+    explain.py
 
-🎨 5. Modern Glassmorphic UI
+frontend/
+    streamlit_app.py
+    style.css
 
-Fully customized:
+frontend/components/
+    sidebar.py
+    chatbot.py
+    form_inputs.py
 
-Blur glass cards
+screenshots/
+    dashboard.png
+    chatbot.png
 
-Gradient backgrounds
+requirements.txt
+README.md
+.gitignore
 
-Animated buttons
+---
 
-Custom chat bubble
+# ⚙️ Installation
 
-Styled input fields
+Clone the repository
 
-Consistent dark mode look
+git clone https://github.com/YOUR_USERNAME/california-house-price-prediction-ml-app.git
 
-UI powered by custom style.css + Streamlit components.
+cd california-house-price-prediction-ml-app
 
-🧠 ML Model
+Install dependencies
 
-A Linear Regression model trained on the California Housing Dataset.
-
-Saved as:
-
-backend/model.joblib
-
-
-Includes both:
-
-Trained model
-
-Column order for prediction consistency
-
-📂 Project Folder Structure
-<img width="727" height="682" alt="image" src="https://github.com/user-attachments/assets/c1aa875b-73d0-4828-984e-a22a7e65634e" />
-
-
-🛠️ Tech Stack
-🔗 Backend
-
-Python
-
-FASTAPI
-
-Uvicorn
-
-Joblib (ML Model)
-
-Google Gemini API
-
-🖥️ Frontend
-
-Streamlit
-
-Custom HTML/CSS
-
-gTTS (voice)
-
-Requests (API communication)
-
-📈 Machine Learning
-
-Linear Regression (scikit-learn)
-
-⚙️ Installation Guide
-1️⃣ Clone the Repository
-git clone https://github.com/Vaishu15764/california-house-price-prediction-aichat-voice-webapp
-cd your-repo-name
-
-▶️ Backend Setup (FASTAPI)
-cd backend
 pip install -r requirements.txt
 
-Create .env inside backend/
-GEMINI_API_KEY=YOUR_KEY_HERE
+---
 
-Run backend:
-uvicorn app:app --reload
+# ▶️ Run the Application
 
+Start the backend
 
-Backend will run at:
-👉 http://127.0.0.1:8000
+uvicorn backend.app:app --reload
 
-💻 Frontend Setup (Streamlit)
-cd frontend
-pip install -r requirements.txt
+Start the frontend dashboard
 
+streamlit run frontend/streamlit_app.py
 
-Run Streamlit:
+---
 
-streamlit run streamlit_app.py
+# 🛠️ Tech Stack
 
+* Python
+* Scikit-learn
+* FastAPI
+* Streamlit
+* Pandas
+* NumPy
+* gTTS (voice output)
+* LLM API (AI explanation)
 
-Frontend will run at:
-👉 http://localhost:8501
+---
 
-🔌 API Endpoints
-Method	Endpoint	Description
-POST	/predict	Predicts house price
-POST	/explain	Generates AI explanation
-GET	/history	Fetches prediction history
-DELETE	/history	Clears prediction history
+# 📊 Example Prediction
 
-📸 Screenshots
-<img width="1624" height="852" alt="image" src="https://github.com/user-attachments/assets/26e873cc-b673-4e7c-aef7-22bfd6531a9f" />
+Input Features
 
+Median Income: 8.32
+House Age: 41
+Average Rooms: 6.98
+Population: 322
 
+Predicted Price
 
-🏡 Prediction UI
-<img width="792" height="697" alt="image" src="https://github.com/user-attachments/assets/fd0a4e4e-6eed-4b9a-a2f6-8421011b414f" />
+$129,825
+₹1,07,75,475
 
+---
 
-💬 AI Chat Interface
-
-<img width="763" height="816" alt="image" src="https://github.com/user-attachments/assets/237057e7-692b-432a-8bbe-021df933258d" />
-
-
-🎧 Voice Output Player
-
-<img width="714" height="365" alt="image" src="https://github.com/user-attachments/assets/ecbc05e6-380c-45ea-9974-8e6fe4c84d75" />
-
-
-🔮 Future Enhancements
-
-Multi-model comparison (RandomForest, XGBoost, NN)
-
-Add map visualization using Folium
-
-Deploy full system on Render / Railway
-
-User authentication to store personal history
-
-Dark/Light mode toggle
-
-👩‍💻 About the Author
+# 👩‍💻 Author
 
 Vaishnavi Sainath Pachange
-Passionate about ML, AI, and building interactive real-world applications.
-
-⭐ Support
-
-If you like this project, please ⭐ star the repo!
+Machine Learning & Data Science Enthusiast
